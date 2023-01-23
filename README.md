@@ -1,1 +1,1 @@
-# unity-endless-runner
+# unity-endless-runner game
