@@ -5,16 +5,17 @@ using UnityEngine;
 public class MoveBackwards : MonoBehaviour
 {
     
-    public float speed = 3.0f;
+    Rigidbody roadRb;   
+    public float speed = 30.0f;
     // Start is called before the first frame update
     void Start()
     {
-        
+        roadRb= GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(new Vector3(0,1,0) * Time.deltaTime *-speed);
+        roadRb.velocity = new Vector3(0,0,1) * -speed;
     }
 }
